@@ -1,3 +1,4 @@
+function _(id) {return document.getElementById(id); }
 // Include a file
 function includeHTML() {
 	let z, i, elmnt, file, xhttp;
@@ -149,3 +150,24 @@ function changeImages() {
 	setTimeout('changeImages()', 3000);
 }
 window.onload = changeImages;
+
+function submitForm() {
+	var status = _("response_status");
+	status.innerHTML = "Please wait ...";
+	var formdata = new FormData();
+	formdata.append("email", _("email_from").value );
+	formdata.append("message", _("contact_message").value );
+	var ajax = new XMLHttpRequest();
+	ajax.open("POST", "send_email.php");
+	ajax.onreadystatechange = function () {
+		if(ajax.readyState == 4 && ajax.status == 200) {
+			if(ajax.responseText == "success") {
+				_("status").innerHTML = '<h2>Thanks your message is sent<h2>';
+			} else {
+				_("status").innerHTML = ajax.responseText;
+				_("my_btn").disabled = false;
+			}
+		}
+	}
+	ajax.send(formdata);
+}
