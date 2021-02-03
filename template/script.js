@@ -104,7 +104,9 @@ function includeHTML() {
 
 // images sliding
 let i = 0;
-let images = [
+let j = 0;
+
+const images = [
 	'./images/view.jpg',
 	'./images/cover.jpg',
 	'./images/s1.jpeg',
@@ -128,14 +130,17 @@ const serviceImages = [
 
 function changeImages() {
 	document.slide.src = images[i];
-	document.imgservice.src = serviceImages[i].image;
-	document.querySelector('#title-service').innerHTML = serviceImages[i].title;
-	document.querySelector('#text-service').innerHTML = serviceImages[i].text;
+	document.imgservice.src = serviceImages[j].image;
+	document.querySelector('#title-service').innerHTML = serviceImages[j].title;
+	document.querySelector('#text-service').innerHTML = serviceImages[j].text;
 
-	if (i < images.length - 1 && i < serviceImages.length - 1) {
+	if (i < images.length - 1) {
 		i++;
+	} else if (j < serviceImages.length - 1) {
+		j++;
 	} else {
 		i = 0;
+		j = 0;
 	}
 	setTimeout('changeImages()', 3000);
 }
