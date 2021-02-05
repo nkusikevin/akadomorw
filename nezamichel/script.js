@@ -35,71 +35,51 @@ function includeHTML() {
 	 */
 
 	// In NavBar section add logo image
-	document.logo.src = './images/white_transparent.png';
+	//document.logo.src = './images/white_transparent.png';
 
 	// In menu section, the first section below navbar
-	document.querySelector('#company-title').innerHTML = 'Dj Mike';
+	document.querySelector('#company-title').innerHTML = 'Neza Entertainment';
 	document.querySelector('#company-desc').innerHTML = `
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque optio
-					enim quis neque nulla mollitia corporis soluta, fugiat perferendis
-					corrupti deleniti impedit magni molestiae delectus autem voluptatem
-					ducimus asperiores voluptatibus.`;
+	We are a versatile and diverse Entertainment Hub with all services regarding provision of happiness.`;
 
 	// In who we are section
 	document.querySelector(
 		'#status'
-	).innerHTML = `Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque optio
-					enim quis neque nulla mollitia corporis soluta, fugiat perferendis
-					corrupti deleniti impedit magni molestiae delectus autem voluptatem
-					ducimus asperiores voluptatibus.`;
+	).innerHTML = `Neza Entertainment is an entertainment Hub based in Kigali in Rwanda that is evaluated on fundamentals of Smartness, Discipline, and Respect for our clients and partners
+	 Event: We provided event organizer, sounds system, Dj, artist and decorations for all your memorable ceremonies.
+ Fashion: Our beautiful clothing will complement your beauty. We sell dresses, shirts, jumpsuits, leggings, swimwear, jewelry, shoes and more.
+ House and land Property: Get available properties for lending or buying. House for individuals, Families or Groups of people.".`;
 
 	// Abous us section
 	// left section in about us
 	document.querySelector(
 		'#mission'
-	).innerHTML = `Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero magni asperiores velit!`;
+	).innerHTML = `Creating Jobs for youths  `;
 
 	// middle section in about us
-	document.aboutimg.src = './images/cover.jpg';
+	document.aboutimg.src = './images/slider1.jpeg';
 	document.querySelector(
 		'#img-caption'
-	).innerHTML = `Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero magni asperiores velit!`;
+	).innerHTML = `Our customers' happiness is what we priorities`;
 
 	// right section in about us
 	document.querySelector(
 		'#visions'
-	).innerHTML = `Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero magni asperiores velit!`;
-
-	// In team section
-	document.firstimg.src = './images/ceo.jpg';
-	document.querySelector('#first-name').innerHTML = 'Granit Frank';
-	document.querySelector('#first-position').innerHTML = 'Co founder & CEO';
-
-	document.secondimg.src = './images/engineer.jpeg';
-	document.querySelector('#second-name').innerHTML = 'William Haven';
-	document.querySelector('#second-position').innerHTML = 'Senior Engineer';
-
-	document.thirdimg.src = './images/analyst.jpg';
-	document.querySelector('#third-name').innerHTML = 'Marceline Dalosa';
-	document.querySelector('#third-position').innerHTML = 'Business Analyst';
-
-	document.fouthimg.src = './images/manager.png';
-	document.querySelector('#fouth-name').innerHTML = 'Alicia Wes';
-	document.querySelector('#fouth-position').innerHTML = 'Sales Manger';
+	).innerHTML = `Youth Empowerment `;
 
 	// In contact us section
-	document.querySelector('#address').innerHTML = 'Kigali';
-	document.querySelector('#street').innerHTML = 'KN857';
-	document.querySelector('#email').innerHTML = 'info@template.com';
-	document.querySelector('#phone').innerHTML = '+250788374674';
+	document.querySelector('#address').innerHTML = 'Kigali, Rwanda';
+	document.querySelector('#street').innerHTML = 'KG133';
+	document.querySelector('#email').innerHTML = 'niwemike@gmail.com';
+	document.querySelector('#phone').innerHTML = '+250788782442';
 
 	// Link to social media
-	document.querySelector('#facebook').href = 'http://www.facebook.com';
-	document.querySelector('#twitter').href = 'http://www.twitter.com';
-	document.querySelector('#instagram').href = 'http://www.instagram.com';
-	document.querySelector('#whatsapp').href = 'https://wa.me/+250788384757';
-	document.querySelector('#youtube').href = 'http://www.youtube.com';
-	document.querySelector('#linkedin').href = 'http://www.linkedin.com';
+	document.querySelector('#facebook').href = 'https://www.facebook.com/uwajeneza';
+	document.querySelector('#twitter').href = 'https://twitter.com/Nezamichel';
+	document.querySelector('#instagram').href = 'https://www.instagram.com/nezamichel/';
+	document.querySelector('#whatsapp').href = 'https://wa.me/+250788782442';
+	document.querySelector('#youtube').href = 'https://www.youtube.com/channel/UCW3TpK1VOW5fUoeWlHSCbHQ';
+	document.querySelector('#linkedin').href = 'https://www.linkedin.com/in/michel-uwajeneza-23044213b/';
 }
 
 // images sliding
@@ -107,25 +87,22 @@ let i = 0;
 let j = 0;
 
 const images = [
-	'./images/view.jpg',
-	'./images/cover.jpg',
-	'./images/s1.jpeg',
-	'./images/s2.jpeg',
-	'./images/s3.jpeg',
-	'./images/slide1.jpg',
-	'./images/slide2.jpg',
-	'./images/slide3.jpg',
-	'./images/slide4.jpg',
+	'./images/view.jpeg',
+	'./images/cover.jpeg',
+	'./images/slider1.jpeg',
+	'./images/slider2.jpeg',
+	'./images/slider 3.jpeg',
+	
 ];
 
 const serviceImages = [
 	{
-		image: './images/s1.jpeg',
-		title: 'Title 1',
-		text: 'Outside view',
+		image: './images/cover.jpeg',
+		title: 'Event organized',
+		text: 'Inside view',
 	},
-	{ image: './images/s2.jpeg', title: 'Title 2', text: 'Swimming pool' },
-	{ image: './images/s3.jpeg', title: 'Title 3', text: 'For lunch' },
+	{ image: './images/slider1.jpeg', title: 'Designs and Decorations', text: 'The outlook to expect' },
+	{ image: './images/slider6.jpeg', title: 'clothings and Fashions', text: 'suits' },
 ];
 
 function changeImages() {
