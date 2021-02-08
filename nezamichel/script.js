@@ -46,9 +46,7 @@ function includeHTML() {
 	document.querySelector(
 		'#status'
 	).innerHTML = `Neza Entertainment is an entertainment Hub based in Kigali in Rwanda that is evaluated on fundamentals of Smartness, Discipline, and Respect for our clients and partners
-	 Event: We provided event organizer, sounds system, Dj, artist and decorations for all your memorable ceremonies.
- Fashion: Our beautiful clothing will complement your beauty. We sell dresses, shirts, jumpsuits, leggings, swimwear, jewelry, shoes and more.
- House and land Property: Get available properties for lending or buying. House for individuals, Families or Groups of people.".`;
+	 .`;
 
 	// Abous us section
 	// left section in about us
@@ -98,11 +96,11 @@ const images = [
 const serviceImages = [
 	{
 		image: './images/cover.jpeg',
-		title: 'Event organized',
-		text: 'Inside view',
+		title: 'Events',
+		text: 'We provided event organizer, sounds system, Dj, artist and decorations for all your memorable ceremonies.',
 	},
-	{ image: './images/slider1.jpeg', title: 'Designs and Decorations', text: 'The outlook to expect' },
-	{ image: './images/slider6.jpeg', title: 'clothings and Fashions', text: 'suits' },
+	{ image: './images/slider1.jpeg', title: 'House and Land property', text: 'Get available properties for lending or buying. House for individuals, Families or Groups of people.' },
+	{ image: './images/slider6.jpeg', title: 'clothings and Fashions', text: 'Our beautiful clothing will complement your beauty. We sell dresses, shirts, jumpsuits, leggings, swimwear, jewelry, shoes and more.' },
 ];
 
 function changeImages() {
