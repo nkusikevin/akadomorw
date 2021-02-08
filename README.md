@@ -9,6 +9,8 @@
 
 ## For images sliding
 
+- Insert `favicon` logo and Change `title` in `index.html`
+- Change footer text in `footer.html`
 - Open `script.js` file
 - `images` array stores company images which will be sliding in the top section.
 - Modify `images` array buy including images for a specific company.

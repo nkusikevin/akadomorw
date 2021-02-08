@@ -87,6 +87,28 @@ html {
 		width: 100% !important;
 	}
 
+	.intro-section {
+		height: auto;
+	}
+
+	#company-desc {
+		font-size: 12px;
+	}
+
+	.contact {
+		display: none;
+	}
+
+	.intro-section img {
+		width: 100%;
+		display: block;
+	}
+
+	.header-size {
+		padding-top: 20px;
+		font-size: 16px;
+	}
+
 	.margin-top {
 		margin-top: 15x;
 	}
@@ -99,5 +121,9 @@ html {
 		margin: auto;
 		display: block;
 		text-align: center;
+	}
+
+	.img-m-h {
+		height: 300px;
 	}
 }
