@@ -99,7 +99,6 @@ let i = 0;
 let j = 0;
 
 const images = [
-	// './images/cover_page.jpg',
 	'./images/Image from iOS (7).jpg',
 	'./images/Image from iOS (2).jpg',
 ];
