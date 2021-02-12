@@ -1,6 +1,4 @@
-function _(id) {
-	return document.getElementById(id);
-}
+function _(id) {return document.getElementById(id); }
 // Include a file
 function includeHTML() {
 	let z, i, elmnt, file, xhttp;
@@ -38,71 +36,62 @@ function includeHTML() {
 	 */
 
 	// In NavBar section add logo image
-	document.logo.src = './images/white_transparent.png';
+	document.logo.src = './images/logo.png';
 
 	// In menu section, the first section below navbar
-	document.querySelector('#company-title').innerHTML = 'Company Name';
+	document.querySelector('#company-title').innerHTML = 'INNOCENT LAW RWANDA';
 	document.querySelector('#company-desc').innerHTML = `
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque optio
-					enim quis neque nulla mollitia corporis soluta, fugiat perferendis
-					corrupti deleniti impedit magni molestiae delectus autem voluptatem
-					ducimus asperiores voluptatibus.`;
+	We are a full service  commercial& corporate  law firm established in 2018. 
+	We are one of the fast growing law firms in Rwanda  dealing with different aspects of law practice.`;
 
 	// In who we are section
 	document.querySelector(
 		'#status'
-	).innerHTML = `Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque optio
-					enim quis neque nulla mollitia corporis soluta, fugiat perferendis
-					corrupti deleniti impedit magni molestiae delectus autem voluptatem
-					ducimus asperiores voluptatibus.`;
+	).innerHTML = `We are a full service  commercial& corporate  law firm established in 2018. 
+	We are one of the fast growing law firms in Rwanda  dealing with different aspects of law practice.
+	
+	Innocent Law Rwanda  is probably one of the most 
+	sought after and fastest growing in the last four (4) years. 
+	It has grown to have a reputation of successfully handling very complex and landmark cases  
+	that have enriched the jurisprudence and practice of law in Rwanda.`;
 
 	// Abous us section
 	// left section in about us
 	document.querySelector(
 		'#mission'
-	).innerHTML = `Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero magni asperiores velit!`;
+	).innerHTML = `To be Rwanda's best law firm that will promote and fight 
+	for equal justice of the infringed to get justice.`;
 
 	// middle section in about us
-	document.aboutimg.src = './images/cover.jpg';
+	document.aboutimg.src = './images/Image from iOS (7).jpg';
 	document.querySelector(
 		'#img-caption'
-	).innerHTML = `Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero magni asperiores velit!`;
+	).innerHTML = `Innocent Law  offers a wide range  of services and resources that you would expect from a law firm of our prestige and caliber, 
+	combining extensive experience & knowledge of the business transactions. `;
 
 	// right section in about us
 	document.querySelector(
 		'#visions'
-	).innerHTML = `Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero magni asperiores velit!`;
+	).innerHTML = `To be Rwanda's Best Commercial & 
+	Corporate  Law Firm, offering commercially& Corporate 
+	 legal solutions and consistent in meeting our clients' 
+	satisfaction both domestic level and international level.`;
 
-	// In team section
-	document.firstimg.src = './images/avatar.jpg';
-	document.querySelector('#first-name').innerHTML = 'Granit Frank';
-	document.querySelector('#first-position').innerHTML = 'Co founder & CEO';
-
-	document.secondimg.src = './images/avatar.jpg';
-	document.querySelector('#second-name').innerHTML = 'William Haven';
-	document.querySelector('#second-position').innerHTML = 'Senior Engineer';
-
-	document.thirdimg.src = './images/avatar.jpg';
-	document.querySelector('#third-name').innerHTML = 'Marceline Dalosa';
-	document.querySelector('#third-position').innerHTML = 'Business Analyst';
-
-	document.fouthimg.src = './images/avatar.jpg';
-	document.querySelector('#fouth-name').innerHTML = 'Alicia Wes';
-	document.querySelector('#fouth-position').innerHTML = 'Sales Manager';
 
 	// In contact us section
-	document.querySelector('#address').innerHTML = 'Kigali';
-	document.querySelector('#street').innerHTML = 'KN857';
-	document.querySelector('#email').innerHTML = 'info@template.com';
-	document.querySelector('#phone').innerHTML = '+250788374674';
+	document.querySelector('#address').innerHTML = 'GIKONDO KIGALI RWANDA';
+	document.querySelector('#street').innerHTML = 'KK 31 AV ';
+	document.querySelector('#email').innerHTML = 'muramira3@gmail.com';
+	document.querySelector('#phone').innerHTML = '+250787314139';
 
 	// Link to social media
-	document.querySelector('#facebook').href = 'http://www.facebook.com';
-	document.querySelector('#twitter').href = 'http://www.twitter.com';
-	document.querySelector('#instagram').href = 'http://www.instagram.com';
-	document.querySelector('#whatsapp').href = 'https://wa.me/+250788384757';
-	document.querySelector('#youtube').href = 'http://www.youtube.com';
-	document.querySelector('#linkedin').href = 'http://www.linkedin.com';
+	document.querySelector('#facebook').href = 'https://www.facebook.com/innocentmuramira';
+	document.querySelector('#twitter').href = 'https://twitter.com/innocentlaw_?s=08';
+	document.querySelector('#instagram').href = 'https://www.instagram.com/lawyerinnocent/';
+	document.querySelector('#whatsapp').href = 'https://wa.me/+250787314139';
+	document.querySelector('#youtube').href = 'https://youtu.be/DkreV4KjvmE';
+	document.querySelector('#linkedin').href = 'http://www.linkedin.com/in/innocent-muramira-20542b137';
+
 }
 
 // images sliding
@@ -110,26 +99,11 @@ let i = 0;
 let j = 0;
 
 const images = [
-	'./images/view.jpg',
-	'./images/cover.jpg',
-	'./images/s1.jpeg',
-	'./images/s2.jpeg',
-	'./images/s3.jpeg',
-	'./images/slide1.jpg',
-	'./images/slide2.jpg',
-	'./images/slide3.jpg',
-	'./images/slide4.jpg',
+	// './images/cover_page.jpg',
+	'./images/Image from iOS (7).jpg',
+	'./images/Image from iOS (2).jpg',
 ];
 
-const serviceImages = [
-	{
-		image: './images/s1.jpeg',
-		title: 'Title 1',
-		text: 'Outside view',
-	},
-	{ image: './images/s2.jpeg', title: 'Title 2', text: 'Swimming pool' },
-	{ image: './images/s3.jpeg', title: 'Title 3', text: 'For lunch' },
-];
 
 function changeImages() {
 	function _(id) {
@@ -160,43 +134,36 @@ function changeImages() {
 }
 
 function click_hamburger() {
-	document.getElementById('hamburger_btn').click();
+	function _(id) {return document.getElementById(id); }
+	_("hamburger_btn").click();
 }
 
-function send_email() {
-	function _(id) {
-		return document.getElementById(id);
-	}
-	var status = _('response_status');
-	if (
-		_('email_from').value !== '' &&
-		_('email_from').value.includes('@') &&
-		_('contact_message').value !== ''
-	) {
-		status.innerHTML = 'Sending message ...';
-		var formdata = new FormData();
-		formdata.append('email', _('email_from').value);
-		formdata.append('message', _('contact_message').value);
-		var ajax = new XMLHttpRequest();
-		ajax.open('POST', 'send_email.php');
-		ajax.onreadystatechange = function () {
-			if (ajax.readyState == 4 && ajax.status == 200) {
-				if (ajax.responseText == 'success') {
-					_('email_from').value = '';
-					_('contact_message').value = '';
-					status.innerHTML = 'Thanks your message is sent';
-					setTimeout(function () {
-						status.innerHTML = '';
-					}, 5000);
-				} else {
-					status.innerHTML = ajax.responseText;
-					_('my_btn').disabled = false;
-					setTimeout(function () {
-						status.innerHTML = '';
-					}, 5000);
+	function send_email() {
+		function _(id) {return document.getElementById(id); }
+		const x = _("slider_image");
+		console.log('change image function', x);
+		var status = _("response_status");
+		if(_("email_from").value !== "" && _("email_from").value.includes("@") && _("contact_message").value !== ""){
+			status.innerHTML = "Sending message ...";
+			var formdata = new FormData();
+			formdata.append("email", _("email_from").value );
+			formdata.append("message", _("contact_message").value );
+			var ajax = new XMLHttpRequest();
+			ajax.open("POST", "send_email.php");
+			ajax.onreadystatechange = function () {
+				if(ajax.readyState == 4 && ajax.status == 200) {
+					if(ajax.responseText == "success") {
+						_("email_from").value = "";
+						_("contact_message").value = "";
+						status.innerHTML = 'Thanks your message is sent';
+						setTimeout(function(){ status.innerHTML = ""; }, 5000);
+					} else {
+						status.innerHTML = ajax.responseText;
+						_("my_btn").disabled = false;
+						setTimeout(function(){ status.innerHTML = ""; }, 5000);
+					}
 				}
 			}
-		};
-		ajax.send(formdata);
+			ajax.send(formdata);
+		}
 	}
-}
